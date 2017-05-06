@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<table class="table-striped table" style="width:100%">
+    <thead>  
+      <tr>
+        <th>Company name</th>
+        <th>Symbol</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+  {% for item in stock %}
+  <tr>
+    <td>{{ item["name"] }}</td>
+    <td>{{ item["symbol"] }}</td> 
+    <td>{{ item["shares"] }}</td>
+    <td>{{ item["price"] }}</td>
+    <td>{{ item["total"] }}</td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td>Cash</td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td>{{ cash }}</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td><strong>{{ finaltotal }}</strong></td>
+  </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}

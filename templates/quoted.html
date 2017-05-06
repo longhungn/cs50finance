@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<table class="table-striped table" style="width:100%">
+    <thead>  
+      <tr>
+        <th>Company name</th>
+        <th>Symbol</th> 
+        <th>Price (USD)</th>
+      </tr>
+    </thead>
+    <tbody>
+  {% for item in list %}
+  <tr>
+    <td>{{ item["name"] }}</td>
+    <td>{{ item["symbol"] }}</td> 
+    <td>{{ item["price"] }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock %}
