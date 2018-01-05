@@ -10,4 +10,4 @@ tl;dr
 Implement a website via which users can "buy" and "sell" stocks
 
 
-[Working website](https://platypusknight.pythonanywhere.com)
+~~[Working website](https://platypusknight.pythonanywhere.com)~~. Not working anymore due to yahoo terminating yahoo finance api
